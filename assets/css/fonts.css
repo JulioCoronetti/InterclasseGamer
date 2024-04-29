@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Neue Plak Extended Bold';
+    src: url('../fonts/Neue\ Plak\ Extended\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neue Plak Extended SemiBold';
+    src: url('../fonts/Neue\ Plak\ Extended\ SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neue Plak SemiBold';
+    src: url('../fonts/Neue\ Plak\ SemiBold.ttf') format('truetype');
+}
