@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="assets/css/parts/footer.css">
 
     <link rel="stylesheet" href="assets/css/mediaQuery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!-- JAVASCRIPT LINKS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -35,8 +37,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
         integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js" defer></script>
+
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/gsap.js" defer></script>
     <script src="assets/js/lenis.js" defer></script>
@@ -117,18 +120,20 @@
     </section>
 
     <!-- FIFA -->
-    <section id="jogo-fifa">
-        <div>
-            <div>
+    <section class="SecaoJogos" id="jogo-fifa">
+        <div class="JogosContainer">
+
+            <div class="JogosTitulo">
                 <h2 class="tituloGSAP">EA Sports FC 24</h2>
-                <p class="textoGSAP" id="subtituloFIFA">(PS4)</p>
+                <p class="textoGSAP">(PS4)</p>
             </div>
 
-            <div>
+            <div class="JogosDescricao">
                 <p class="textoGSAP">Experimente a emoção do futebol no <span id="spanVermelho">EA Sports</span></p>
                 <p class="textoGSAP"><span id="spanVermelho">FC 24</span> onde cada partida é uma jornada rumo à </p>
                 <p class="textoGSAP">glória, e cada gol é uma explosão de celebração.</p>
             </div>
+
         </div>
     </section>
 
@@ -142,63 +147,62 @@
     </section>
 
     <!-- STREET FIGHTER 6 -->
-    <section id="jogo-street">
-        <div>
-            <div>
+    <section id="jogo-street" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
                 <h2 class="tituloGSAP">Street Fighter 6</h2>
                 <p class="textoGSAP">(Xbox Series S)</p>
             </div>
 
-            <div>
+            <div class="JogosDescricao">
                 <p class="textoGSAP">Entre na arena do <span id="spanVermelho">Street Fighter 6</span> e prove sua</p>
                 <p class="textoGSAP">habilidade em combates épicos, onde cada movimento</p>
                 <p class="textoGSAP">é uma demonstração de destreza e estratégia.</p>
             </div>
+            <a href="https://www.youtube.com/watch?v=rN_PBAK5YyM" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer">
+            </a>
         </div>
-        <a href="https://www.youtube.com/watch?v=rN_PBAK5YyM" data-fancybox>
-            <img src="assets/img/trailer.png" class="trailer">
-        </a>
     </section>
 
     <!-- BRAWL STARS -->
-    <section id="jogo-brawl">
-        <div>
-            <div>
+    <section id="jogo-brawl" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
                 <h2 class="tituloGSAP">Brawl Stars</h2>
                 <p class="textoGSAP">(Mobile)</p>
             </div>
 
-            <div>
+            <div class="JogosDescricao">
                 <p class="textoGSAP">Mergulhe na ação frenética de <span id="spanVermelho">Brawl Stars,</span></p>
                 <p class="textoGSAP">onde a diversão é garantida em cada batalha</p>
                 <p class="textoGSAP">multiplayer, desafio e conquista.</p>
             </div>
+
+            <a href="https://www.youtube.com/watch?v=CaryjOdYFa0" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer">
+            </a>
         </div>
-
-        <a href="https://www.youtube.com/watch?v=CaryjOdYFa0" data-fancybox>
-            <img src="assets/img/trailer.png" class="trailer">
-        </a>
-
     </section>
 
     <!-- POKÉMON GO -->
-    <section id="jogo-pokemon">
-        <div>
-            <div>
+    <section id="jogo-pokemon" class="SecaoJogos">
+        <div class="JogosContainer">
+            <div class="JogosTitulo">
                 <h2 class="tituloGSAP">Pokémon GO</h2>
                 <p class="textoGSAP">(Mobile)</p>
             </div>
 
-            <div>
+            <div class="JogosDescricao">
                 <p class="textoGSAP">Explore o mundo real e descubra Pokémon ao seu redor</p>
                 <p class="textoGSAP">com <span id="spanVermelho">Pokémon GO</span>, uma aventura que transforma cada</p>
                 <p class="textoGSAP">esquina em uma oportunidade de captura e diversão.</p>
             </div>
-        </div>
 
-        <a href="https://www.youtube.com/watch?v=HquX9Ttt4eQ" data-fancybox>
-            <img src="assets/img/trailer.png" class="trailer">
-        </a>
+            <a href="https://www.youtube.com/watch?v=HquX9Ttt4eQ" data-fancybox>
+                <img src="assets/img/trailer.png" class="trailer">
+            </a>
+        </div>
     </section>
 
 
@@ -243,9 +247,7 @@
                 </div>
             </label>
         </div>
-    </section>
 
-    <footer>
         <div id="boxParticipar">
             <div>
                 <h3>Você está preparado?</h3>
@@ -254,64 +256,67 @@
 
             <a href="#" class="btn btn--action"><span>PARTICIPAR</span></a>
         </div>
+    </section>
 
-        <div>
-            <div id="contato">
-                <div>
-                    <h5>Links</h5>
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#introducao">SOBRE</a></li>
-                        <li><a href="#jogo-fifa">JOGOS</a></li>
-                    </ul>
-                </div>
+    <footer>
+        
 
-                <div>
-                    <h5>Sobre nós</h5>
-                    <ul>
-                        <li>
-                            <a href="" target="_blank" class="githubLink">
-                                <img src="assets/img/githubLogo.svg">
-                                <p>Giovana duarte</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/JulioCoronetti" target="_blank" class="githubLink">
-                                <img src="assets/img/githubLogo.svg">
-                                <p>Julio Coronetti</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/PietroMena" target="_blank" class="githubLink">
-                                <img src="assets/img/githubLogo.svg">
-                                <p>Pedro Henrique</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/ContaPraApagar" target="_blank" class="githubLink">
-                                <img src="assets/img/githubLogo.svg">
-                                <p>Nicolas Macedo</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div id="contato">
+            <div class="abasContato">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#introducao">SOBRE</a></li>
+                    <li><a href="#jogo-fifa">JOGOS</a></li>
+                </ul>
+            </div>
 
-                <div>
-                    <h5>Contato</h5>
-                    <ul>
-                        <li>CEP: 18090-110</li>
-                        <li>(15) 3212-7400</li>
-                        <li>(15) 3212-7421</li>
-                    </ul>
-                </div>
+            <div class="abasContato">
+                <h5>Sobre nós</h5>
+                <ul>
+                    <li>
+                        <a href="" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg">
+                            <p>Giovana duarte</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JulioCoronetti" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg">
+                            <p>Julio Coronetti</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PietroMena" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg">
+                            <p>Pedro Henrique</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ContaPraApagar" target="_blank" class="githubLink">
+                            <img src="assets/img/githubLogo.svg">
+                            <p>Nicolas Macedo</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <div>
-                    <h5>Ficou com alguma duvida?</h5>
-                    <p>Envie um email diretamente para nós.</p>
-                    <a href="mailto:moises.camargo4@portalsesisp.org.br">Clique aqui!</a>
-                </div>
+            <div class="abasContato">
+                <h5>Contato</h5>
+                <ul>
+                    <li>CEP: 18090-110</li>
+                    <li>(15) 3212-7400</li>
+                    <li>(15) 3212-7421</li>
+                </ul>
+            </div>
+
+            <div class="abasContato">
+                <h5>Ficou com alguma duvida?</h5>
+                <p>Envie um email diretamente para nós.</p>
+                <button onclick="copiarTexto()" id="botaoEmail">Clique aqui!</button>
             </div>
         </div>
+
     </footer>
 </body>
 

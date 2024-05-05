@@ -1,9 +1,6 @@
 @media (max-width: 500px) {
-
     body {
-        max-width: 100%;
         background-color: #000;
-        overflow-x: hidden;
     }
 
     /* HEADER */
@@ -110,122 +107,21 @@
         line-height: 1.2rem;
     }
 
-    /* EA Sports FC 24 */
-
-    #jogo-fifa {
-        background-position: 80%;
+    .JogosContainer {
+        gap: 1.5rem;
     }
 
-    #jogo-fifa>div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        transform: translate(6%, 0%);
+    .JogosTitulo h2 {
+        font-size: 2rem;
     }
-
-    #jogo-fifa>div h2 {
-        width: 300px;
-        font-size: 1.5rem;
+    
+    .JogosContainer p {
+        width: max-content;
+        font-size: 0.7rem;
     }
-
-    #jogo-fifa>div p {
-        width: 370px;
-        font-size: 0.8rem;
-    }
-
-    /* STREET FIGHTER 6 */
-
-    #jogo-street {
-        background-position: 80%;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    #jogo-street>div {
-        align-items: center;
-        transform: translateX(5%);
-        gap: 1rem;
-    }
-
-    #jogo-street>div h2 {
-        width: 300px;
-        font-size: 1.5rem;
-    }
-
-    #jogo-street>div p {
-        width: 300px;
-        font-size: 0.8rem;
-    }
-
-    #jogo-street div:nth-child(2) p {
-        width: 300px;
-        font-size: 0.65rem;
-    }
-
-    /* BRAWL STARS */
-
-    #jogo-brawl {
-        background-position: 80%;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    #jogo-brawl>div {
-        align-items: center;
-        transform: translate(0%);
-        gap: 1rem;
-    }
-
-    #jogo-brawl>div h2 {
-        width: 300px;
-        font-size: 1.5rem;
-    }
-
-    #jogo-brawl>div p {
-        width: 300px;
-        font-size: 0.8rem;
-    }
-
-    #jogo-brawl div:nth-child(2) p {
-        width: 300px;
-        font-size: 0.65rem;
-    }
-
-    /* POKÉMON GO */
-
-    #jogo-pokemon {
-        background-position: 80%;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    #jogo-pokemon>div {
-        align-items: center;
-        transform: translate(20%);
-        gap: 1rem;
-    }
-
-    #jogo-pokemon>div h2 {
-        width: 300px;
-        font-size: 1.5rem;
-    }
-
-    #jogo-pokemon>div p {
-        width: 300px;
-        font-size: 0.8rem;
-    }
-
-    #jogo-pokemon div:nth-child(2) p {
-        width: 300px;
-        font-size: 0.65rem;
-    }
-
 
     .trailer {
         width: 150px;
-        height: auto;
-        transform: translateX(15%);
     }
 
     #participar h2 {
@@ -258,16 +154,11 @@
         width: 250px;
     }
 
-    footer {
-        width: 100%;
-        height: 100vh;
-        padding-bottom: 40vh;
-    }
-
     #boxParticipar {
         width: 70%;
         height: 160px;
         flex-direction: column;
+        transform: translateY(270%);
     }
 
     #boxParticipar>div h3:nth-child(1), #boxParticipar>div h3:nth-child(2) {
@@ -278,10 +169,17 @@
         font-size: 0.8rem;
     }
 
+    footer {
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+    }
+
     #contato {
+        width: 70%;
+        height: 80%;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .transicao {
@@ -292,10 +190,6 @@
         left: 0;
         top: 0;
         transform: translate(500%, 980%);
-    }
-
-    #jogo-fifa .tituloGSAP, #jogo-fifa #subtituloFIFA {
-        transform: translateX(0%);
     }
 
 }

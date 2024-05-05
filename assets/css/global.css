@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Neue Plak SemiBold';
+}
+
 /* LOADER */
 
 .loader-wrapper {
@@ -17,22 +21,82 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
-  
-  .loader {
+}
+
+.loader {
     border: 16px solid transparent;
     border-top: 16px solid #C20717;
     border-radius: 50%;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* SEÇÕES JOGOS*/
+
+.SecaoJogos {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.JogosContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.JogosTitulo h2 {
+    font-family: "Neue Plak Extended Bold";
+    font-size: 3rem;
+    color: white;
+}
+
+.JogosContainer p {
+    font-family: "Neue Plak Extended SemiBold";
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1.8rem;
+}
+
+#jogo-fifa {
+    background-image: url(../img/section-fifa/background.jpg);
+    align-items: flex-start;
+}
+
+#jogo-brawl {
+    height: 120vh;
+    background-image: url(../img/section-brawl/background.jpg);
+}
+
+#jogo-pokemon {
+    height: 120vh;
+    background-image: url(../img/section-pokemon/background.jpg); 
+}
+
+#jogo-street {
+    height: 120vh;
+    background-image: url(../img/section-street/background.jpg);
+}
 
 /* OUTROS EFEITOS */
 
@@ -73,19 +137,6 @@
 
 #spanVermelho {
     color: #C20717;
-}
-
-.trailer {
-    width: 15.3125rem;
-    height: 5.625rem;
-    flex-shrink: 0;
-    transform: translateX(72%);
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-a:hover .trailer {
-    opacity: 1;
 }
 
 #zoom-out {

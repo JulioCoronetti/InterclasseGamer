@@ -14,6 +14,22 @@ if (!isMobileDevice()) {
     });
 }
 
+// Copy to clipboard
+function copiarTexto() {
+    const texto = "senaisorocaba@sp.senai.br";
+
+    navigator.clipboard.writeText(texto)
+        .then(() => {
+            Swal.fire({
+                title: "Email Copiado!",
+                icon: "success"
+            });
+        })
+        .catch(err => {
+            console.error('Erro ao copiar: ', err);
+        });
+}
+
 // Menu
 
 document.querySelector("#menu").addEventListener("click", () => {

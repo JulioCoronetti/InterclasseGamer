@@ -102,3 +102,68 @@ input:checked+label .description {
 .card[for="c4"] {
     background-image: url('../../img/section-wrapper/pokemongo.jpg');
 }
+
+#boxParticipar {
+    position: absolute;
+    transform: translateY(200%);
+    width: 70%;
+    height: 13rem;
+    background-color: #c0c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+#boxParticipar>div {
+    font-family: 'Neue Plak SemiBold';
+    font-size: 2rem;
+}
+
+#boxParticipar>div h3:nth-child(1) {
+    color: #17181D;
+}
+
+#boxParticipar>div h3:nth-child(2) {
+    color: #C20717;
+}
+
+.btn {
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.btn--action {
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #17181D;
+    color: #fff;
+    transition: all .5s ease 0s;
+    box-shadow: 0 10px #08090a;
+}
+
+.btn--action span {
+    display: inline-block;
+    position: relative;
+    transition: all .5s ease;
+    font-family: 'Neue Plak Extended Bold';
+}
+
+.btn--action:hover span {
+    filter: brightness(130%), saturate(200%);
+}
+
+.btn--action:hover span:before {
+    left: 0;
+    opacity: 1;
+}
+
+.btn--action:active {
+    box-shadow: 0 5px #1c1d20;
+}
