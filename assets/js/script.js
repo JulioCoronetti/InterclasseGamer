@@ -1,3 +1,19 @@
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader-wrapper");
+    loader.style.display = "none";
+});
+
+// Verificador 
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (!isMobileDevice()) {
+    var rellax = new Rellax('.rellax', {
+        breakpoints: [576, 768, 1201]
+    });
+}
+
 // Menu
 
 document.querySelector("#menu").addEventListener("click", () => {
@@ -49,20 +65,26 @@ Fancybox.bind("[data-fancybox]", {
     // Opções de configuração
     baseClass: "my-fancybox",
     mobile: {
-      autoFocus: false,
-      clickContent: function(current, event) {
-        return current.type === "image" ? "close" : "next";
-      },
+        autoFocus: false,
+        clickContent: function (current, event) {
+            return current.type === "image" ? "close" : "next";
+        },
     },
     // Configuração específica para vídeos
     youtube: {
-      controls: 1,
-      showinfo: 0,
-      rel: 0,
-      autoplay: 1,
-      loop: 1,
-      mute: 0,
-      enablejsapi: 1
+        controls: 1,
+        showinfo: 0,
+        rel: 0,
+        autoplay: 1,
+        loop: 1,
+        mute: 0,
+        enablejsapi: 1
     },
-  });
-  
+});
+
+
+// Botão 
+window.addEventListener("scroll", function () {
+    let botaoRetornar = document.querySelector("#botaoRetornar");
+    botaoRetornar.classList.toggle("activeScroll", window.scrollY > 500);
+});

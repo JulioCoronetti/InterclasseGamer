@@ -1,6 +1,7 @@
-@media (max-width: 700px) {
+@media (max-width: 375px) {
 
     body {
+        max-width: 100%;
         background-color: #000;
         overflow-x: hidden;
     }
@@ -285,6 +286,16 @@
 
     .transicao {
         width: 95%;
+    }
+
+    #botaoRetornar {
+        left: 0;
+        top: 0;
+        transform: translate(500%, 980%);
+    }
+
+    #jogo-fifa .tituloGSAP, #jogo-fifa #subtituloFIFA {
+        transform: translateX(0%);
     }
 
 }

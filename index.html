@@ -5,40 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interclasse Gamer 🎮</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/media.css">
 
+    <link rel="stylesheet" href="assets/css/parts/navbar.css">
+    <link rel="stylesheet" href="assets/css/parts/header.css">
+    <link rel="stylesheet" href="assets/css/parts/introducao.css">
+    <link rel="stylesheet" href="assets/css/parts/easportsfc.css">
+    <link rel="stylesheet" href="assets/css/parts/streetfighter.css">
+    <link rel="stylesheet" href="assets/css/parts/brawlstars.css">
+    <link rel="stylesheet" href="assets/css/parts/pokemongo.css">
+    <link rel="stylesheet" href="assets/css/parts/participar.css">
+    <link rel="stylesheet" href="assets/css/parts/footer.css">
+
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
+
+    <!-- JAVASCRIPT LINKS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
-
     <script src="https://unpkg.com/split-type" defer></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
         integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-
-
-
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/gsap.js" defer></script>
-    <script src="assets/js/rellax.js" defer></script>
     <script src="assets/js/lenis.js" defer></script>
 </head>
 
 <body>
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <!-- SIDE BAR -->
     <nav>
         <button id="menu"></button>
@@ -53,18 +62,22 @@
         </div>
     </nav>
 
+    <a href="#home" id="botaoRetornar">
+        <img src="assets/img/arrowUp.svg">
+    </a>
+
     <!-- HEADER -->
     <header id="home">
         <div id="titulo">
             <h1 class="rellax" data-rellax-speed="8">Interclasse</h1>
-            <h1 class="rellax" data-rellax-speed="6">Gamer <span id="mundoRoxo">Senai</span></h1>
+            <h1 class="rellax" data-rellax-speed="6">Gamer <span id="spanVermelho">Senai</span></h1>
         </div>
 
         <div id="boxContainer" class="rellax" data-rellax-speed="4">
             <div>
                 <div id="tituloBox">
                     <h2>Prepare-se para <br>
-                        uma <span id="mundoRoxo">jornada épica.</span></h2>
+                        uma <span id="spanVermelho">jornada épica.</span></h2>
                 </div>
 
                 <div id="gifContainer"></div>
@@ -108,12 +121,12 @@
         <div>
             <div>
                 <h2 class="tituloGSAP">EA Sports FC 24</h2>
-                <p class="textoGSAP">(PS4)</p>
+                <p class="textoGSAP" id="subtituloFIFA">(PS4)</p>
             </div>
 
             <div>
-                <p class="textoGSAP">Experimente a emoção do futebol no <span id="mundoRoxo">EA Sports</span></p>
-                <p class="textoGSAP"><span id="mundoRoxo">FC 24</span> onde cada partida é uma jornada rumo à </p>
+                <p class="textoGSAP">Experimente a emoção do futebol no <span id="spanVermelho">EA Sports</span></p>
+                <p class="textoGSAP"><span id="spanVermelho">FC 24</span> onde cada partida é uma jornada rumo à </p>
                 <p class="textoGSAP">glória, e cada gol é uma explosão de celebração.</p>
             </div>
         </div>
@@ -137,7 +150,7 @@
             </div>
 
             <div>
-                <p class="textoGSAP">Entre na arena do <span id="mundoRoxo">Street Fighter 6</span> e prove sua</p>
+                <p class="textoGSAP">Entre na arena do <span id="spanVermelho">Street Fighter 6</span> e prove sua</p>
                 <p class="textoGSAP">habilidade em combates épicos, onde cada movimento</p>
                 <p class="textoGSAP">é uma demonstração de destreza e estratégia.</p>
             </div>
@@ -156,7 +169,7 @@
             </div>
 
             <div>
-                <p class="textoGSAP">Mergulhe na ação frenética de <span id="mundoRoxo">Brawl Stars,</span></p>
+                <p class="textoGSAP">Mergulhe na ação frenética de <span id="spanVermelho">Brawl Stars,</span></p>
                 <p class="textoGSAP">onde a diversão é garantida em cada batalha</p>
                 <p class="textoGSAP">multiplayer, desafio e conquista.</p>
             </div>
@@ -178,7 +191,7 @@
 
             <div>
                 <p class="textoGSAP">Explore o mundo real e descubra Pokémon ao seu redor</p>
-                <p class="textoGSAP">com <span id="mundoRoxo">Pokémon GO</span>, uma aventura que transforma cada</p>
+                <p class="textoGSAP">com <span id="spanVermelho">Pokémon GO</span>, uma aventura que transforma cada</p>
                 <p class="textoGSAP">esquina em uma oportunidade de captura e diversão.</p>
             </div>
         </div>
@@ -250,6 +263,36 @@
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#introducao">SOBRE</a></li>
                         <li><a href="#jogo-fifa">JOGOS</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Sobre nós</h5>
+                    <ul>
+                        <li>
+                            <a href="" target="_blank" class="githubLink">
+                                <img src="assets/img/githubLogo.svg">
+                                <p>Giovana duarte</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JulioCoronetti" target="_blank" class="githubLink">
+                                <img src="assets/img/githubLogo.svg">
+                                <p>Julio Coronetti</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/PietroMena" target="_blank" class="githubLink">
+                                <img src="assets/img/githubLogo.svg">
+                                <p>Pedro Henrique</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ContaPraApagar" target="_blank" class="githubLink">
+                                <img src="assets/img/githubLogo.svg">
+                                <p>Nicolas Macedo</p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 

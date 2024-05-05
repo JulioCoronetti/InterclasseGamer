@@ -1,0 +1,148 @@
+footer {
+    width: 100%;
+    height: 70vh;
+    background-color: #1c1d20;
+}
+
+footer div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#contato {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Neue Plak SemiBold";
+}
+
+#contato div:nth-child(1) {
+    margin-top: 10rem;
+}
+
+#contato div {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#contato div h5 {
+    font-size: 1.5rem;
+    width: max-content;
+    color: rgb(47, 47, 73);
+}
+
+#contato div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+#contato div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#contato div ul li a,
+#contato div p {
+    font-size: 1rem;
+    width: max-content;
+    color: white;
+    text-decoration: none;
+}
+
+#contato div>a {
+    padding: 10px 20px;
+    background-color: #C20717;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+
+
+.githubLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.githubLink img {
+    width: 20%;
+    color: white;
+}
+
+#boxParticipar {
+    position: absolute;
+    transform: translate(20%, -50%);
+    width: 70%;
+    height: 13rem;
+    background-color: #c0c0c0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+}
+
+#boxParticipar>div {
+    font-family: 'Neue Plak SemiBold';
+    font-size: 2rem;
+}
+
+#boxParticipar>div h3:nth-child(1) {
+    color: #17181D;
+}
+
+#boxParticipar>div h3:nth-child(2) {
+    color: #C20717;
+}
+
+.btn {
+    display: block;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.btn--action {
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #17181D;
+    color: #fff;
+    transition: all .5s ease 0s;
+    box-shadow: 0 10px #08090a;
+}
+
+.btn--action span {
+    display: inline-block;
+    position: relative;
+    transition: all .5s ease;
+    font-family: 'Neue Plak Extended Bold';
+}
+
+.btn--action:hover span {
+    filter: brightness(130%), saturate(200%);
+}
+
+.btn--action:hover span:before {
+    left: 0;
+    opacity: 1;
+}
+
+.btn--action:active {
+    box-shadow: 0 5px #1c1d20;
+}
