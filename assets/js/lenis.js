@@ -1,27 +1,34 @@
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-    console.log(e)
-})
-
-function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-requestAnimationFrame(raf)
+if (!isMobileDevice()) {
+    const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+        console.log(e)
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
 
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(this.getAttribute('href'));
 
-        if (target) {
-            lenis.scrollTo(target, {
-                duration: 2
-            });
-        }
+            if (target) {
+                lenis.scrollTo(target, {
+                    duration: 2
+                });
+            }
+        });
     });
-});
+}
+
