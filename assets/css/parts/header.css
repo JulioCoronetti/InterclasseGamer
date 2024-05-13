@@ -134,18 +134,26 @@ header {
 }
 
 #card.card-background-1 {
+    width: 21.875rem;
+    height: 28.125rem;
     background-image: url(../../img/header/card/eafc24-card.avif);
 }
 
 #card.card-background-2 {
+    width: 21.875rem;
+    height: 28.125rem;
     background-image: url(../../img/header/card/pokemongo-card.jpg);
 }
 
 #card.card-background-3 {
+    width: 21.875rem;
+    height: 28.125rem;
     background-image: url(../../img/header/card/streetfighter6-card.jpg);
 }
 
 #card.card-background-4 {
+    width: 21.875rem;
+    height: 28.125rem;
     background-image: url(../../img/header/card/brawlstars-card.jpg);
 }
 

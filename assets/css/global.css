@@ -91,12 +91,12 @@ body {
 
 #jogo-pokemon {
     height: 120vh;
-    background-image: url(../img/section-pokemon/background.jpg); 
+    background-image: url(../img/section-pokemon/background.webp); 
 }
 
 #jogo-street {
     height: 120vh;
-    background-image: url(../img/section-street/background.jpg);
+    background-image: url(../img/section-street/background.webp);
 }
 
 /* OUTROS EFEITOS */

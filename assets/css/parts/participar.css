@@ -92,7 +92,7 @@ input:checked+label .description {
 }
 
 .card[for="c2"] {
-    background-image: url('../../img/section-wrapper/streetfighter6.jpg');
+    background-image: url('../../img/section-wrapper/streetfighter6.webp');
 }
 
 .card[for="c3"] {
@@ -100,7 +100,7 @@ input:checked+label .description {
 }
 
 .card[for="c4"] {
-    background-image: url('../../img/section-wrapper/pokemongo.jpg');
+    background-image: url('../../img/section-wrapper/pokemongo.webp');
 }
 
 #boxParticipar {
