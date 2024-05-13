@@ -54,7 +54,7 @@
     #gifContainer {
         width: 16rem;
         border-radius: 0.9375rem;
-        background-size: cover;
+        background: url(../../img/header/video-interclasse-low-quality.gif) cover no-repeat;
     }
 
     #logosContainer {
