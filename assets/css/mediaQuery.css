@@ -158,7 +158,8 @@
         width: 70%;
         height: 160px;
         flex-direction: column;
-        transform: translateY(270%);
+        justify-content: center;
+        gap: 1rem;
     }
 
     #boxParticipar>div h3:nth-child(1), #boxParticipar>div h3:nth-child(2) {
@@ -166,11 +167,12 @@
     }
 
     .btn--action {
+        width: 80%;
         font-size: 0.8rem;
     }
 
     footer {
-        height: 150vh;
+        height: 200vh;
         justify-content: center;
         align-items: center;
     }

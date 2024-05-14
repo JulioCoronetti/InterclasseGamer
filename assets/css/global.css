@@ -106,13 +106,13 @@ body {
     position: fixed;
     left: 90%;
     top: 85%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #C20717;
-    border-radius: 50%;
+    border-radius: 10px;
     z-index: 9999999;
-    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 48px 13px 0px rgba(0, 0, 0, 0.00) inset, 0px 31px 12px 0px rgba(0, 0, 0, 0.04) inset, 0px 17px 10px 0px rgba(0, 0, 0, 0.13) inset, 0px 8px 8px 0px rgba(0, 0, 0, 0.21) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), 0px 48px 13px 0px transparent inset, 0px 31px 12px 0px transparent inset, 0px 17px 10px 0px transparent inset, 0px 8px 8px 0px transparent inset, 0px 2px 4px 0px transparent inset;
+    transition: .5s;
 }
 
 #botaoRetornar.activeScroll {
@@ -120,12 +120,17 @@ body {
 }
 
 #botaoRetornar img {
-    width: 40px;
-    height: 40px;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#botaoRetornar:hover {
+    background-color: #4d040a;
+    color: rgba(255, 255, 255, 0.411);
 }
 
 .transicao {
