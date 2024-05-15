@@ -188,10 +188,4 @@
         width: 95%;
     }
 
-    #botaoRetornar {
-        left: 0;
-        top: 0;
-        transform: translate(500%, 980%);
-    }
-
 }
