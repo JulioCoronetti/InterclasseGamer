@@ -92,6 +92,7 @@
 #cardChaveamento {
     width: 28%;
     height: 80%;
+    background-image: url(assets/img/header/card/eafc24-card.avif);
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
