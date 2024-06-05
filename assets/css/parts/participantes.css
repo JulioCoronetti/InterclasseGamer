@@ -62,6 +62,12 @@
     color: #C20717;
     text-decoration: none;
     font-size: 1rem;
+    transition: .5s;
+}
+
+#incricoesChaveamento:hover {
+    color: #ff0a1e;
+    text-decoration: underline;
 }
 
 .botoesChaveamento {
@@ -90,7 +96,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 2rem;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 199px 279px 96px 0px rgba(0, 0, 0, 0.01), 127px 179px 88px 0px rgba(0, 0, 0, 0.07), 72px 100px 74px 0px rgba(0, 0, 0, 0.25), 32px 45px 55px 0px rgba(0, 0, 0, 0.43), 0px 0px 100px 10px #000 inset;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25), 199px 279px 96px 0px rgba(0, 0, 0, 0.01), 127px 179px 88px 0px rgba(0, 0, 0, 0.07), 72px 100px 74px 0px rgba(0, 0, 0, 0.25), 32px 45px 55px 0px rgba(0, 0, 0, 0.43), 0px 0px 100px 10px #000 inset;
     transform: translateY(20%) rotate(-2deg);
     transition: background-image 0.5s ease-in-out;
 }
