@@ -13,7 +13,7 @@
     gap: 2.5rem;
 }
 
-#participantes > h2 {
+#participantes>h2 {
     text-align: center;
     font-size: 5rem;
     color: #e7e7e7;
@@ -23,7 +23,7 @@
 #boxChaveamento {
     position: relative;
     width: 70%;
-    height: 60%;
+    height: 55%;
     background-color: #363A46;
     box-shadow: 0px 48px 13px 0px rgba(0, 0, 0, 0.00) inset, 0px 31px 12px 0px rgba(0, 0, 0, 0.04) inset, 0px 17px 10px 0px rgba(0, 0, 0, 0.13) inset, 0px 8px 8px 0px rgba(0, 0, 0, 0.21) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
     border-radius: 5rem;
@@ -32,18 +32,65 @@
     align-items: center;
 }
 
-#textosChaveamento {
-    width: 40%;
+#textoChaveamento {
+    width: 60%;
+    height: 80%;
 }
 
-#textosChaveamento h2 {
-    font-size: 3rem;
-    color: #C20717;
-    font-weight: bold;
-}
-
-
-#textosChaveamento p {
-    font-size: 1.5rem;
+#textoChaveamento h2 {
+    font-size: 2.5rem;
     color: white;
+    font-family: 'Neue Plak Extended Bold';
+}
+
+#textoChaveamento p, #incricoesChaveamento {
+    font-size: 1.5rem;
+    color: #616264;
+    font-family: 'Neue Plak Extended SemiBold';
+    margin-top: 2%;
+}
+
+#boxBotoesChaveamento {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-top: 5%;
+    gap: 1rem;
+    margin-bottom: 5%;
+}
+
+#incricoesChaveamento {
+    color: #C20717;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.botoesChaveamento {
+    display: block;
+    width: 200px;
+    height: 75px;
+    background-color: #616264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.botoesChaveamento:hover {
+    background-color: #b6b8bb;
+}
+
+#cardChaveamento {
+    width: 28%;
+    height: 80%;
+    background-image: url(/assets/img/header/card/eafc24-card.avif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 199px 279px 96px 0px rgba(0, 0, 0, 0.01), 127px 179px 88px 0px rgba(0, 0, 0, 0.07), 72px 100px 74px 0px rgba(0, 0, 0, 0.25), 32px 45px 55px 0px rgba(0, 0, 0, 0.43), 0px 0px 100px 10px #000 inset;
+    transform: translateY(20%) rotate(-2deg);
+    transition: background-image 0.5s ease-in-out;
 }
